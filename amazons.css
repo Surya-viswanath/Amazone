@@ -2,7 +2,7 @@
     background-color: rgb(19, 25, 33);
     height: 60px;
     color: white;
-    width: 100%;
+   /** width: 100%;*/
     height: 100%;
 }
 body{
@@ -14,7 +14,7 @@ body{
     line-height: 27.3px!important;
 }
 .container {
-    width: 99%;
+   /** width: 99%;**/
     /* background-color: red; */
     height: 100%;
     margin: auto;
@@ -86,7 +86,7 @@ body{
 .search-container {
     background-color: red;
     margin-left: 50px;
-    width: 640px;
+    width: 500px;
     display: flex;
     height: 40px;
     justify-content: space-between;
@@ -143,12 +143,13 @@ body{
 }
 
 .login-container p {
+    font-size: 13px;
     margin: 0;
 }
 
 .account {
-    font-weight: 900;
-    font-size: 1.1rem;
+    font-weight: 700;
+    font-size: 13px;
 }
 
 .return-order-container {
@@ -159,21 +160,26 @@ body{
 
 .return-order-container p {
     margin: 0;
+    font-size: 13px;
 }
 
 .order {
-    font-size: 1rem;
-    font-weight: 900;
+    font-weight: 700;
+    font-size: 13px;
     display: flex;
     width: 70px;
 }
 .cart-container {
+    margin-top: 20px;
     font-size: 1.1rem;
     display: flex;
 }
 
 .cart-container i {
     font-size: 1rem;
+}
+.cart-container p {
+    font-size: 13px;
 }
 /***new section**/
 .nav {
@@ -186,7 +192,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 15px;
+   /** padding-left: 15px;**/
 }
 .container-nav ul {
     padding: 0;
@@ -240,13 +246,13 @@ body{
 /***new**/
 /* SECTION 1 */
 .section-1 {
-    width: 100%;
+   /** width: 100%;**/
     height: auto;
     background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/Aug/Apay/GW-PC-Deals-Unrec-3000._CB629506848_.jpg');
     background-size: cover;
     display: flex;
 }
-.section-1 .section-1-container {
+/**.section-1 .section-1-container {
     margin-top: 300px;
     margin-right: 20px;
     margin-left: 20px;
@@ -258,7 +264,7 @@ body{
 }
 .section-1 .section-1-container .section-1-column {
     width: 100%;
-    /* height: 300px; */
+    /* height: 300px;
     background-color: white;
     padding: 20px;
 }
@@ -272,7 +278,7 @@ body{
     margin-top: 10px;
     font-size: 14px;
    
-}
+}**/
 /***new***/
 .section-2 .section-2-container {
     margin-top: 300px;
@@ -498,3 +504,48 @@ body{
     font-weight: 300;
     font-size: 15.5px;
 }
+/***responsive*/
+@media (max-width:1200px){
+    .nav{
+        width: 100%;
+        overflow-x: hidden;
+    
+    }
+    .header{
+        width: 100%;
+    }
+    .youradd{
+        display: none;
+    }
+    .account{
+        font-size: 12px;
+    }
+}
+/**@media (max-width:1050px){
+    .video-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:820px){
+    .video-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:600px){
+    .video-container{
+        grid-template-columns: 1fr;
+    }
+    .search-container,
+    .ri-grid-fill{
+        display: none;
+    }
+    .video-container{
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .header{
+        padding-right: 10px;
+    }
+}**/
+
+

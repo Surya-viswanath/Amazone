@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="amazons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-color: #E3E6E6;">
+    <header class="header row">
+        <div class="container container-header col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="logo-container border-white">
+                <div class="logo"></div>
+                <span class="dotin">.in</span>
+            </div>
+            <div class="address-container border-white">
+                <p class="hello">Hello</p>
+                <div class="icon-address">
+                    <i class="fa-solid fa-location-dot icon-location"></i>
+                    <p class="youradd">Select your address</p>
+                </div>
+            </div>
+            <div class="search-container">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input type="text" class="search-input" />
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    
+                </div>
+            </div>
+            <div class="language-container border-white">
+                <p>English</p>
+                <div class="lauguge-image">
+                    <img
+                        src="https://media.istockphoto.com/vectors/vector-flag-of-the-republic-of-india-proportion-23-the-national-flag-vector-id1051236720?k=20&m=1051236720&s=612x612&w=0&h=ATObRTHmTosADa9zaB2dQPn_VAQmG1XYH2x92kzc304=" />
+                </div>
+            </div>
+            <div class="login-container border-white">
+                <p>Hello,<span>sign in</span></p>
+                <p class="account">Account & Lists</p>
+            </div>
+            <div class="return-order-container">
+                <p>Returns
+                    <div class="order">& Orders</div>
+                    </p>
+            </div>
+            <div class="cart-container border-white">
+                <i class="fa-solid fa-cart-shopping"></i>
+               <p>Cart</p>
+            </div>
+        </div>
+    </header>
+    <!--new section-->
+    <nav class="nav row">
+        <div class="container container-nav col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <ul>
+                <li class="border-white" id="open-nav-sidebar">
+                    <span class="open-nav-slider">
+                        <i class="fa-solid fa-bars border-white"></i>
+                        All
+                    </span>
+                </li>
+                <li class="border-white"><a href="#">Amazon miniTV</a></li>
+                <li class="border-white"><a href="#"> Sell</a></li>
+                <li class="border-white"><a href="#">Best Sellers</a></li>
+                <li class="border-white"><a href="#">Mobiles</a></li>
+                <li class="border-white"><a href="#">Today's Deals</a></li>
+                <li class="border-white"><a href="#">Customer Service</a></li>
+                <li class="border-white"><a href="#"> Electronics</a></li>
+                <li class="border-white prime-image-hover">
+                    <a href="#">Prime</a>
+                    <div class="prime-image">
+                        <img src="https://m.media-amazon.com/images/G/31/prime/NavFlyout/TryPrime/2018/Apr/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB442254244_.jpg">
+                    </div>
+
+                </li>
+            </ul>
+            <div class="nav-right-image-amazon-prime">
+                <img src="prime.jpg"/>
+            </div>
+        </div>
+    </nav>
+    <!--next section-->
+    <!-- image slider -->
+
+    <!-- SECTION 1 -->
+     <section class="section-1 row">
+        <div class="mainimg col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          
+            <img src="data:image/jpeg;base64,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" alt="Italian Trulli">
+           
+        </div>
+     </section>
+     
+     <!---image sections-->
+    <!--jhghfhg--><!---col-lg-12 col-md-12 col-sm-8 col-xl-12 col-xs-8-->
+
+    <main class="main">
+        <div class="card-product-container container ">
+            <div class="card-product ">
+                <h3 id="head3">Home appliances | Up to 55% off</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-372x232----B08RDL6H79._SY232_CB667322346_.jpg" />
+                        <p id="tag">Air Conditioners</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/IMG15/Irfan/GATEWAY/MSO/B08345R1ZW---372x232._SY232_CB667322346_.jpg" />
+                        <p id="tag">Refrigeraters</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/IMG15/Irfan/GATEWAY/MSO/B07G5J5FYP._SY232_CB667322346_.jpg" />
+                    <p id="tag">Microwaves</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08CPQVLZT._SY232_CB667322346_.jpg" />
+                        <p id="tag">Washing Machine</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h3 id="head3">Up to 70% off | Styles for Men</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg" />
+                        <p id="tag">clothing</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-2-372-232._SY232_CB636110853_.jpg" />
+                        <p id="tag">Footwear</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-3-372-232._SY232_CB636110853_.jpg" />
+                    <p id="tag">Watches</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-4-186-116._SY116_CB636110853_.jpg" />
+                        <p id="tag">Bags & language</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+             <div class="section-1-column">
+                <h3 id="head3">Up to 70% off | Clearance store</h3>
+                <img src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img22/Electronics/Clearance/Clearance_store_Desktop_CC_2x._SY608_CB628315133_.jpg" id="pic"/>
+               <br>
+               <button class="card-product-btn">see more</button>
+            </div>
+            
+            </div>
+
+        </div>
+        <!-----2nd-->
+        <div class="card-product-container container">
+            <div class="card-product">
+                <h3 id="head3">Automotive essentials | Up to 60% off</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare2x._SY232_CB410830552_.jpg" />
+                        <p id="tag">Cleanign supplies</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare2x._SY232_CB410830552_.jpg" />
+                        <p id="tag">Tyre & rim care</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_372x232._SY232_CB405083904_.jpg" />
+                    <p id="tag">Helmets</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum2x._SY232_CB410830555_.jpg" />
+                        <p id="tag">Vacuum cleaner</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h3 id="head3">Up to 60% off | Professional tools, testing & more</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img17/Biss/2018/QC/Tools2x._SY232_CB424026090_.jpg" />
+                        <p id="tag">Tools</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img17/Biss/2021/BAU_GW_Graphics/PCQC/372X2322._SY232_CB643952553_.jpg" />
+                        <p id="tag">Measuring Tools</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img17/Biss/2021/BAU_GW_Graphics/PCQC/372X2321._SY232_CB643952553_.jpg" />
+                    <p id="tag">Cleaning supplies</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img17/Biss/2018/QC/med2x._SY232_CB424026091_.jpg" />
+                        <p id="tag">Medical supplies</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="section-1-column1">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img19/AMS/Houseads/Laptops-Sept2019._CB436595915_.jpg" id="pic"/>
+                <h3 id="head3">Sign in for your best experience</h3>
+                <button>Sign in securely</button>
+            </div>
+            </div>
+
+        </div>
+         <!-----3rd-->
+        
+         <div class="card-product-container container">
+            <div class="card-product">
+                <h3 id="head3">Up to 50% off | Baby products</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/PC_QC_diaper_372X232._SY232_CB620365328_.jpg" />
+                        <p id="tag">Diapers & more</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T2/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/PC_QC_Teddy_372X232._SY232_CB620365328_.jpg" />
+                        <p id="tag">Soft toys</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/PC_QC_indoor_game_372X232._SY232_CB620365328_.jpg" />
+                    <p id="tag">Indoor games</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/PC_QC_rideon_372X232._SY232_CB620365328_.jpg" />
+                        <p id="tag">Outdoor & more</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h3 id="head3">Up to 70% off | Styles for women</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF1-372-232._SY232_CB636048992_.jpg" />
+                        <p id="tag">Women Cloths</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF2-372-232._SY232_CB636048992_.jpg" />
+                        <p id="tag">Footwear & bags</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF4-372-232._SY232_CB636048992_.jpg" />
+                    <p id="tag">Watches</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF3-372-232._SY232_CB636048992_.jpg" />
+                        <p id="tag">Fashion jewellery</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+             <div class="section-1-column">
+                <h3 id="head3">Up to 50% off | Monitor blood sugar at home</h3>
+                <img src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img21/Pharmacy/CC_high_3._SY608_CB592656736_.jpg" id="pic"/>
+               <br>
+               <button class="card-product-btn">see more</button>
+            </div>
+            
+            </div>
+    
+        </div>
+    </main>
+    <!---image sections-->
+<!-------slider-->
+<div class="imgslider1">
+    <div class="slider1">
+    <h3>Today’s Deals</h3> <button class="card-product-btn" style="padding-top: 10px;">see all deals
+    </button></div>
+<div class="section-3-list">
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/41eW+ZpbDTL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 17% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Samsung Galaxy M14 5G</div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/41heWun9O4L._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 73% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Best of Truke Earbuds - Last Day Offer</div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/31Ri-FAMBUL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 79% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Never before prices on Mivi Headsets</div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/31aN6f+4FsL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 41% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Deal of the Day on Nobel Hygiene</div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/31K3PaZ2ytL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 81% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Dry Fruits and Seeds</div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/31qrsfYb7+L._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 60% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Best Deals on Trolley and Backpack from Mokobara</div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/515TGoW6xRL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 41% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Deal of the Day on Nobel Hygiene</div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/41-uUmseGIL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 81% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">
+                Dry Fruits and Seeds</div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/41uGjvXbeBL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 60% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Best Deals on Trolley and Backpack from Mokobara</div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/51kdwtY1KvL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 66% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Bathroom accessories
+               </div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/51bvi-s4TZL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 94% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Best offers on PC and Electronic accessories from RTS</div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/51r3Yf8tUcL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 87% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">
+                Wolpin's best deals on wallpaper and wall artWolpin's best deals on wallpaper and…
+                </div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/51GtDrgENNL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 22% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Best Selling Toys from Webby
+            </div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/51CdjfvOEOL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 67% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Bathroom accessories from Plantex</div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/41hL17SSyKL._UL1200__AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 53% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Best Selling Toys from Einstein Box
+              </div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/319-Fwd9pXL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 66% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Amazing deals on Ultracare Pro</div>
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/41wN8UcVDuL._AC_SY400_.jpg" alt="">
+        <div class="onelinered">
+            <div class="section-3-item-head">Up to 58% off</div>
+            <div class="section-3-item-price">Deal of the Day</div>
+            </div>
+            <div class="section-3-item-brand">Best prices on Puma Clothing & Accessories
+                </div>
+    </div>
+</div>
+    </div>
+</div>
+<!------slider2-->
+<!-------slider-->
+<div class="imgslider2">
+    <div class="slider1">
+    <h3>Frequently repurchased in Grocery</h3> </div>
+<div class="section-3-list">
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/71uoadMXYJL._AC_SY400_.jpg">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/71zxqbC1a-L._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/41cwLo4HE1L._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/81U3UQ3IAaS._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/716-OC33-EL._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/41fnPBnX5UL._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/71Jjj9kCVpL._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/716+Hb5aYhL._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/61+jGc7vLIL._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/71u-UfyEy3L._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/617U0ERYL8L._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/61M8OfFkENL._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/713D1eLsaqL._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/71zaMCuJ2dL._AC_SY400_.jpg" alt="">
+    </div>
+    <div class="section-3-item">
+        <img src="https://m.media-amazon.com/images/I/818+xGCCgHL._AC_SY400_.jpg" alt="">
+    </div>
+</div>
+    </div>
+</div>
+    <!--jhghfhg-->
+    <main class="main">
+        <div class="card-product-container container">
+            <div class="section-1-column">
+                <h3 id="head3">Sell on Amazon with 1-Click Launch Support</h3>
+                <img src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img16/malar/March23/HR_758X608._SY608_CB595115209_.jpg">
+               <br>
+               <button class="card-product-btn">Register now</button>
+            </div>
+            <div class="card-product">
+                <h3 id="head3">Starting ₹99 | Tools & home improvement</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img18/HomeImprovement/GW/372x232_1a._SY232_CB610512278_.jpg" />
+                        <p id="tag">Mops , Wipes & more</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img18/HomeImprovement/GW/372x232_2b._SY232_CB610512278_.jpg" />
+                        <p id="tag">Tool & more</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img18/HomeImprovement/GW/372x232_3c._SY232_CB610512278_.jpg" />
+                    <p id="tag">Bathroom accessories</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img18/HomeImprovement/GW/372x232._SY232_CB610509523_.jpg" />
+                        <p id="tag">Boards, plugs & more</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h3 id="head3">Electronics devices for home office</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img21/PC/Computers/GW/DBQC/D21343116_IN_CEPC_BAU_GW_graphics_March21_dbqc_5._SY232_CB655805757_.jpg" />
+                        <p id="tag">Smartwatch & trackers</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img21/PC/Computers/GW/DBQC/D21343116_IN_CEPC_BAU_GW_graphics_March21_dbqc_6._SY232_CB655805757_.jpg" />
+                        <p id="tag">Tablets</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img21/PC/Computers/GW/DBQC/D21343116_IN_CEPC_BAU_GW_graphics_March21_dbqc_7._SY232_CB655805757_.jpg" />
+                    <p id="tag">Laptops</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img21/PC/Computers/GW/DBQC/D21343116_IN_CEPC_BAU_GW_graphics_March21_dbqc_8._SY232_CB655805757_.jpg" />
+                        <p id="tag">Monitors</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+             
+            
+
+        </div>
+    </main>
+    <!--img section-->
+    <!----image slider3-->
+    <div class="imgslider1">
+        <div class="slider1">
+        <h3>Grocery & Gourmet</h3> <button class="card-product-btn" style="padding-top: 10px;">see all offers
+        </button></div>
+    <div class="section-3-list">
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/41+s7VJi0PL._AC_SY400_.jpg" alt="">
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/71Tgup3uQ9L._AC_SY400_.jpg" alt="">
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/51YuG-47LZL._AC_SY400_.jpg" alt="">
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/71XzhqJC1cL._AC_SY400_.jpg" alt="">
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/51ToHG1zwKL._AC_SY400_.jpg" alt="">
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/51m6GnRwmSL._AC_SY400_.jpg" alt="">
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/71j7mgOHTrL._AC_SY400_.jpg" alt="">
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/81OCwFQGpLL._AC_SY400_.jpg" alt="">
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/51FDH-70JnL._AC_SY400_.jpg" alt="">
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/61t+hPpoxdL._AC_SY400_.jpg" alt="">
+            
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/51IA41yh+5L._AC_SY400_.jpg" alt="">
+           
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/61ovNvlye2L._AC_SY400_.jpg" alt="">
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/61L8x9MIKQL._AC_SY400_.jpg" alt="">
+        </div>
+        <div class="section-3-item">
+            <img src="https://m.media-amazon.com/images/I/519GO+ONsLL._AC_SY400_.jpg" alt="">
+        </div>
+    </div>
+        </div>
+    </div>
+    <!---end image slider2-->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 boder">
+        <img src="minitv.jpg" style="
+            display: block;
+            margin-left: auto;
+            margin-right: auto;"/>
+    </div>
+     <!--jhghfhg-->
+     <main class="main">
+        <div class="card-product-container container">
+            <div class="card-product">
+                <h3 id="head3">Up to 40% off | Daily essentials</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img23/HPC/GW/QC/Desktop-QC-2_2_2x._SY232_CB616376703_.jpg" />
+                        <p id="tag">Laundry essentials</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img23/HPC/GW/QC/Desktop-QC-2_1_2x._SY232_CB616376703_.jpg" />
+                        <p id="tag">Household cleaners</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img23/HPC/GW/QC/Desktop-QC-2_4_2x._SY232_CB616376703_.jpg" />
+                    <p id="tag">Oral care</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img23/HPC/GW/QC/Desktop-QC-2_3_2x._SY232_CB616376703_.jpg" />
+                        <p id="tag">Air fresheners</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">See all offers</button>
+            </div>
+            <div class="card-product">
+                <h3 id="head3">Up to 40% off | Daily essentials</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img23/HPC/GW/QC/QC1_PC_Tile_04._SY232_CB616377583_.jpg" />
+                        <p id="tag">Health & household</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img23/HPC/GW/QC/QC1_PC_Tile_01._SY232_CB616377583_.jpg" />
+                        <p id="tag">Grocery essentials</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img23/HPC/GW/QC/QC1_PC_Tile_03._SY232_CB616377583_.jpg" />
+                    <p id="tag">Baby products</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img23/HPC/GW/QC/QC1_PC_Tile_02._SY232_CB616377583_.jpg" />
+                        <p id="tag">Pet supplies</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">See all offers</button>
+            </div>
+            <div class="card-product">
+                <h3 id="head3">Up to 30% off | School essentials at best prices</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img21/Books/gateway/books1-2x_1s._SY232_CB593287520_.jpg" />
+                        <p id="tag">Textbooks & guides</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img21/Books/BB2023/books2-2x._SY232_CB593287363_.jpg" />
+                        <p id="tag">School book combo</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img21/Books/BB2023/books3-2x._SY232_CB593287363_.jpg" />
+                    <p id="tag">Pens, pencils & more</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img21/Books/BB2023/books4-2x._SY232_CB593287363_.jpg" />
+                        <p id="tag">Notebooks & more</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">See all offers</button>
+            </div>
+             
+            
+
+        </div>
+    </main>
+
+     <!--jhghfhg-->
+     <main class="main">
+        <div class="card-product-container container">
+            <div class="section-1-column">
+                <h3 id="head3">Relive Your First Love only on miniTV</h3>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Home/AmazonTV/Ravina/Desktop/DeskCC-GuturGu-758x608_V4._SY608_CB591872322_.jpg">
+               <br>
+               <button class="card-product-btn">Watch for FREE | miniTV</button>
+            </div>
+            <div class="card-product">
+                <h3 id="head3">Birthday store</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GWBdaystore/Artboard_1QC2_2x._SY232_CB662999952_.jpg" />
+                        <p id="tag">Gift for men</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GWBdaystore/Artboard_2QC2_2x._SY232_CB662999952_.jpg" />
+                        <p id="tag">Gift for women</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GWBdaystore/Artboard_3QC2_2x._SY232_CB662999952_.jpg" />
+                    <p id="tag">Gift for boys</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GWBdaystore/Artboard_4QC2_2x._SY232_CB662999955_.jpg" />
+                        <p id="tag">Gift for girls</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h3 id="head3">Up to 40% off | Breakfast special</h3>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Grocery/GW_BTF/Desktop-QC_1_2x._SY232_CB616420261_.jpg" />
+                        <p id="tag">Tea & coffee</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Grocery/GW_BTF/Desktop-QC_revised_2x._SY232_CB616418452_.jpg" />
+                        <p id="tag">Oats & muesli</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Grocery/GW_BTF/Desktop-QC_3_2x._SY232_CB616420261_.jpg" />
+                    <p id="tag">Honey & spreads</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Grocery/GW_BTF/Desktop-QC_4_2x._SY232_CB616420261_.jpg" />
+                        <p id="tag">Pasta & noodles</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            
+            
+                            
+               
+             
+            
+
+        </div>
+    </main>
+
+</body>
+</html>
